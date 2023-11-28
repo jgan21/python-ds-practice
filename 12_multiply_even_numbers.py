@@ -17,6 +17,7 @@ def multiply_even_numbers(nums):
 
     if even_numbers :
         return functools.reduce(lambda a, b : a * b, even_numbers)
+        #reduce(lambda accum, curr: accum * curr, list)
     else :
         return 1
 
