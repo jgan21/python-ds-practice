@@ -40,22 +40,23 @@ def list_manipulation(lst, command, location, value=None):
         >>> list_manipulation(lst, 'add', 'dunno') is None
         True
     """
-
+#change to elif
     if(command == "remove"):
         if(location == "beginning"):
             return lst.pop(0)
-        if(location == "end"):
+        elif(location == "end"):
             return lst.pop()
 
     if(command == "add"):
         if(location == "beginning"):
             lst.insert(0, value)
             return lst
-        if(location == "end"):
+        elif(location == "end"):
             lst.append(value)
             return lst
-
-    if(command != "add" and command != "remove"):
-        return None
-    if(location != "beginning" and location != "end"):
-        return None
+#Commented out: can use code below as fail fast, can also leave it out, python
+# will default to None
+    # if(command != "add" and command != "remove"):
+    #     return None
+    # if(location != "beginning" and location != "end"):
+    #     return None

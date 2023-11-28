@@ -12,6 +12,7 @@ def last_element(lst):
         >>> nums == [1, 2, 3]
         True
     """
+    #[] is falsey, can check for falsey values or if length = 0
     if lst == []:
         return None
     else:

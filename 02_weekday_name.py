@@ -12,7 +12,7 @@ def weekday_name(day_of_week):
         >>> weekday_name(9)
         >>> weekday_name(0)
     """
-
+#Global constant, plural
     name_of_week = {
         1 : "Sunday",
         2 : "Monday",
@@ -25,5 +25,6 @@ def weekday_name(day_of_week):
 
     if day_of_week in name_of_week:
         return name_of_week[day_of_week]
-    else:
-        return None
+    #Commented out: do no need to explicity return None
+    # else:
+    #     return None
